@@ -9,7 +9,7 @@ html {
 }
 
 body {
-    background: #263D42;
+    background: #282828;
     font-family: 'Shadows Into Light', sans-serif;
     font-size: 2.5rem;
 }
@@ -83,6 +83,7 @@ ul {
 
 .todo-list-item {
     padding: 10px;
+    padding-right: 15px;
     margin-top: 10px;
     border: none;
     border-radius: 5px;
