@@ -36,8 +36,10 @@
                         <div class="todo-list-item-content">
                             <%= data.content %>
                         </div>
-                        <a href="/edit/<%= data._id %>" class="edit"><span class="fas fa-edit"></span></a>
-                        <a href="/remove/<%= data._id %>" class="remove"><span class="fas fa-times"></span></a>
+                        <div class="buttons">
+                            <a href="/edit/<%=data._id %>" class="edit"><span class="fas fa-edit"></span></a>
+                            <a href="/remove/<%=data._id %>" class="remove"><span class="fas fa-times"></span></a>
+                        </div>
                     </li>
                     <% } else { %>
                         <li class="todo-list-item">
@@ -47,8 +49,10 @@
                             <div class="todo-list-item-content">
                                 <%= data.content %>
                             </div>
-                            <a href="/edit/<%= data._id %>" class="edit"><span class="fas fa-edit"></span></a>
-                            <a href="/remove/<%= data._id %>" class="remove"><span class="fas fa-times"></span></a>
+                            <div class="buttons">
+                                <a href="/edit/<%=data._id %>" class="edit"><span class="fas fa-edit"></span></a>
+                                <a href="/remove/<%=data._id %>" class="remove"><span class="fas fa-times"></span></a>
+                            </div>
                         </li>
                     <% } %>
                 <% }) %>
